@@ -413,17 +413,16 @@ Note that you must complete it to include a background image.
             
             // Lets create two triangle objects
             this.texture = new CGRAtexture(this.gl);
-            this.texture.load("gallery_1.jpg");
+            this.texture.load("VanGogh.jpg");
             this.texture2 = new CGRAtexture(this.gl);
-            this.texture2.load("ISR_RUG_lc.png");
+            this.texture2.load("Logo.png");
             this.texture3 = new CGRAtexture(this.gl);
-            this.fundo = new CGRAtexture(this.gl);
-            // this.fundo.load("fundo.jpg");
-            this.fundo.load("tio.jpg");
+            this.background = new CGRAtexture(this.gl);
+            this.background.load("background.jpg");
 
             this.myFundo = new square(this.gl);
             this.myFundo.setShader(this.shaderprogT);
-            this.myFundo.settexture(this.fundo);
+            this.myFundo.settexture(this.background);
             
         
             this.mycube1 = new cube(this.gl);
