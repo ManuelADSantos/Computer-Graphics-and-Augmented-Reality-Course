@@ -1,0 +1,17 @@
+{
+  "name": "Computer Graphics DevContainer",
+  "dockerComposeFile": ["docker-compose.yml"],
+  "service": "app",
+  "workspaceFolder": "/cgar_workspace",
+  "settings": {
+    "terminal.integrated.shell.linux": "/bin/bash"
+  },
+  "extensions": [
+    "ms-python.python",
+    "ms-toolsai.jupyter",
+    "mechatroner.rainbow-csv",
+    "ms-vscode.live-server"
+  ],
+  "postCreateCommand": "pip install --upgrade pip",
+  "remoteUser": "devuser"
+}
